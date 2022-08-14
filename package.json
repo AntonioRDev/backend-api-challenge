@@ -1,14 +1,16 @@
 {
   "name": "backend-api-challenge",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "src/main.ts",
   "repository": "https://github.com/AntonioRDev/backend-api-challenge.git",
   "author": "Antonio Ribeiro <antonioribdev@gmail.com>",
   "scripts": {
-    "start": "tsnd --respawn src/index.ts",
+    "start": "tsnd --respawn src/main.ts",
     "test": "jest"
   },
   "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@types/express": "^4.17.13",
     "@types/jest": "^28.1.6",
     "@types/node": "^18.0.0",
     "@types/shuffle-array": "^1.0.2",
@@ -19,6 +21,10 @@
   },
   "license": "MIT",
   "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "express": "^4.18.1",
+    "reflect-metadata": "^0.1.13",
     "shuffle-array": "^1.0.1"
   }
 }
